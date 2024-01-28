@@ -148,12 +148,15 @@ public class AppData {
     public boolean isNeedHelp() {
         return isNeedHelp;
     }
+
     public String getIntFilename() {
         return resultFilenamesPrefix + INT_FILENAME;
     }
+
     public String getRealFilename() {
         return resultFilenamesPrefix + REAL_FILENAME;
     }
+
     public String getStringFilename() {
         return resultFilenamesPrefix + STRING_FILENAME;
     }

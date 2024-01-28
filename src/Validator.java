@@ -3,6 +3,7 @@ import java.util.regex.Pattern;
 
 public class Validator {
     static final String regexp;
+
     static {
         //ms win OS
         final String WIN_FILESYSTEM_REGEXP = "^[^/:\\*\\?\"<>|]*$";
@@ -18,6 +19,7 @@ public class Validator {
                 ? MAC_FILESYSTEM_REGEXP
                 : UNIX_FILESYSTEM_REGEXP;
     }
+
     public static void validate(String validationString) throws IllegalArgumentException {
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher = pattern.matcher(validationString);

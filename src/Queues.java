@@ -10,6 +10,7 @@ class Queues {
     private final DataWriter intWriter;
     private final DataWriter realWriter;
     private final DataWriter stringWriter;
+
     Queues(
             String resultFilesPath,
             String intFilename,
@@ -32,6 +33,7 @@ class Queues {
                 stringQ
         );
     }
+
     public void putDataInto(String line) {
         Queue<String> selectedQ;
         Thread selectedThread;

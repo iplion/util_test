@@ -31,8 +31,8 @@ public class FileReader {
             });
 
             List<Scanner> processedFiles = resourceFiles.stream()
-                .filter(scanner -> !scanner.hasNext())
-                .toList();
+                    .filter(scanner -> !scanner.hasNext())
+                    .toList();
             processedFiles.forEach(Scanner::close);
             resourceFiles.removeAll(processedFiles);
         }
